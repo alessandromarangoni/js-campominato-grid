@@ -14,6 +14,7 @@ else if (difficolta =="medio"){
     button.addEventListener("click",startMD)
 }
 else{
+    console.log(difficolta)
     button.addEventListener("click",startHD)
 }
 
@@ -64,5 +65,6 @@ function startHD() {
         });
     }
 }
+
 
 
