@@ -1,22 +1,12 @@
 let bottone = document.getElementById("button");
+let bottoneMD = document.getElementById("button2");
+let bottoneHD = document.getElementById("button3");
 console.log(bottone)
-// let main = document.getElementById("main");
-// console.log(main)
-// let boxed = document.getElementById("boxed");
-let difficolta = document.getElementById("difficolta").value
-console.log (difficolta)
 
-if(difficolta=="facile"){
-    button.addEventListener("click",start)
-}
-else if (difficolta =="medio"){
-    console.log(difficolta)
-    button.addEventListener("click",startMD)
-}
-else{
-    console.log(difficolta)
-    button.addEventListener("click",startHD)
-}
+
+bottone.addEventListener("click",start)
+bottoneMD.addEventListener("click",startMD)
+bottoneHD.addEventListener("click",startHD)
 
 function start() {
     for (let i = 1; i < 100 +1; i++) {
@@ -39,7 +29,7 @@ function startMD() {
         // const numero = i[i]
         let boxed = document.getElementById("boxed");
         let creaDiv = document.createElement("div");
-        creaDiv.classList.add("box");
+        creaDiv.classList.add("boxMD");
         boxed.appendChild(creaDiv);
         creaDiv.innerHTML = [i];
 
@@ -55,7 +45,7 @@ function startHD() {
         // const numero = i[i]
         let boxed = document.getElementById("boxed");
         let creaDiv = document.createElement("div");
-        creaDiv.classList.add("box");
+        creaDiv.classList.add("boxHD");
         boxed.appendChild(creaDiv);
         creaDiv.innerHTML = [i];
 

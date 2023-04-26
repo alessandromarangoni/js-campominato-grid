@@ -11,7 +11,7 @@ main{
     /* width: 100%; */
     margin: 2rem;
 }
-#button{
+#button,#button2,#button3{
     margin-top: 100px;
     padding: .5rem 1rem ;
     border-radius: 20px;
@@ -35,6 +35,28 @@ main{
     border: 2px solid white;
     width: calc(100% / 10);
     height: calc(100%/ 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.boxMD{
+    /* float: left; */
+    border: 2px solid white;
+    width: calc(100% / 9);
+    height: calc(100%/ 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.boxHD{
+    /* float: left; */
+    border: 2px solid white;
+    width: calc(100% / 7);
+    height: calc(100%/ 7);
     display: flex;
     justify-content: center;
     align-items: center;
